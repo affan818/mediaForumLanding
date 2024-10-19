@@ -1,0 +1,42 @@
+/* src/components/Header.css */
+.navbar-custom {
+  background-color: black;
+  padding: 1rem 0;
+}
+
+.navbar-custom .navbar-brand img {
+  filter: brightness(0) invert(1); /* Optional: Invert the logo if it's not visible */
+}
+
+.navbar-custom .nav-link {
+  color: white !important; /* White text for links */
+}
+
+.navbar-custom .btn-success {
+  background-color: #6c7e55;
+  border-color: #6c7e55;
+}
+
+/* Custom style for toggle button */
+.custom-toggler {
+  border-color: white !important; /* White border for the toggle button */
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Ensures toggle button stays on the right for mobile */
+@media (max-width: 991px) {
+  .navbar-custom .custom-toggler {
+    margin-left: auto; /* Ensures toggle is aligned to the right */
+  }
+}
+
+/* Fixed positioning */
+.navbar-custom {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures it's above other elements */
+}

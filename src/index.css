@@ -1,0 +1,55 @@
+/* src/index.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+:root {
+  --primary-color: #0d6efd; /* Change this to your preferred primary color */
+  --success-color: #58a700; /* Custom success color */
+  --background-color: 247, 246, 242; /* Light background */
+  --text-color: #333; /* Custom text color */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Make form responsive */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Custom padding and margin */
+.section-padding {
+  padding: 4rem 0;
+}
+
+/* Testimonial cards adjustments */
+.card {
+  margin-bottom: 2rem;
+  border: none;
+}
+
+.card-body {
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Responsive Image adjustments */
+.companies img {
+  max-width: 100px;
+  margin: 10px;
+}
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
