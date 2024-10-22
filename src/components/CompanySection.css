@@ -1,3 +1,9 @@
+.mySubmitBtn:active {
+  background-color: #000e04;
+  box-shadow: 0 5px #484646;
+  transform: translateY(1.5px);
+}
+
 .alert {
   margin-top: 10px;
   padding: 10px;

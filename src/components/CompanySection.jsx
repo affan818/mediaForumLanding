@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import MyImage from "/src/assets/images/tanaslogo.png";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "./CompanySection.css";
 
@@ -13,10 +14,10 @@ export default function CompanySection() {
   const [qone, setQone] = useState("");
   const [qtwo, setQtwo] = useState("");
   const [qthree, setQthree] = useState("");
+  const [qfour, setQfour] = useState("");
   const formRef = useRef();
   const [showAlert, setShowAlert] = useState(false);
-  // const searchParams = new URLSearchParams(location.search);
-  // const success = searchParams.get("success");
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -38,6 +39,7 @@ export default function CompanySection() {
           setQone("");
           setQtwo("");
           setQthree("");
+          setQfour("");
         },
         (error) => {
           console.error("Email sending error:", error.text);
@@ -63,12 +65,7 @@ export default function CompanySection() {
         <Col md={6}>
           <h5 className="mt-4">Companies we've helped grow:</h5>
           <div className="companies">
-            <img
-              height={"50px"}
-              width={"100px"}
-              src="https://mediaforumdigital.com/clients/kukreja%20(2).png"
-              alt="SAP"
-            />
+            <img src={MyImage} alt="SAP" />
             <img
               height={"50px"}
               width={"100px"}
@@ -142,8 +139,11 @@ export default function CompanySection() {
             <Row className="mb-2">
               <Col md={6}>
                 <Form.Group>
-                  <Form.Label>First name*</Form.Label>
+                  <Form.Label>
+                    First name <span style={{ color: "red" }}>*</span>
+                  </Form.Label>
                   <Form.Control
+                    required
                     name="first_name"
                     type="text"
                     placeholder="Enter your first name"
@@ -160,8 +160,11 @@ export default function CompanySection() {
               </Col>
               <Col md={6}>
                 <Form.Group>
-                  <Form.Label>Last name*</Form.Label>
+                  <Form.Label>
+                    Last name <span style={{ color: "red" }}>*</span>
+                  </Form.Label>
                   <Form.Control
+                    required
                     name="last_name"
                     type="text"
                     placeholder="Enter your last name"
@@ -181,8 +184,11 @@ export default function CompanySection() {
             <Row className="mb-2">
               <Col md={6}>
                 <Form.Group>
-                  <Form.Label>E-mail*</Form.Label>
+                  <Form.Label>
+                    E-mail <span style={{ color: "red" }}>*</span>
+                  </Form.Label>
                   <Form.Control
+                    required
                     name="email"
                     type="email"
                     placeholder="Enter your email"
@@ -200,8 +206,11 @@ export default function CompanySection() {
 
               <Col md={6}>
                 <Form.Group>
-                  <Form.Label>Mobile Number*</Form.Label>
+                  <Form.Label>
+                    Mobile Number <span style={{ color: "red" }}>*</span>
+                  </Form.Label>
                   <Form.Control
+                    required
                     name="mobile"
                     type="phone"
                     placeholder="Enter your mobile number"
@@ -218,9 +227,13 @@ export default function CompanySection() {
               </Col>
             </Row>
             <Form.Group className="mb-2">
-              <Form.Label>What would you like to talk about?*</Form.Label>
+              <Form.Label>
+                Which digital marketing services do you need ?{" "}
+                <span style={{ color: "red" }}>*</span>
+              </Form.Label>
               <Form.Control
-                name="topic"
+                required
+                name="ans1"
                 as="select"
                 value={qone}
                 onChange={(e) => setQone(e.target.value)}
@@ -231,15 +244,19 @@ export default function CompanySection() {
                   borderRadius: "6px",
                 }}
               >
+                <option>Paid Advertising</option>
                 <option>SEO</option>
-                <option>Content Strategy</option>
-                <option>Growth Marketing</option>
+                <option>Social Media Management</option>
               </Form.Control>
             </Form.Group>
             <Form.Group className="mb-2">
-              <Form.Label>Monthly marketing budget*</Form.Label>
+              <Form.Label>
+                What are your primary goals for this marketing campaign ?{" "}
+                <span style={{ color: "red" }}>*</span>
+              </Form.Label>
               <Form.Control
-                name="budget"
+                required
+                name="ans2"
                 as="select"
                 value={qtwo}
                 onChange={(e) => setQtwo(e.target.value)}
@@ -250,16 +267,19 @@ export default function CompanySection() {
                   borderRadius: "6px",
                 }}
               >
-                <option>Select your budget</option>
-                <option>affan</option>
-                <option>mukul</option>
-                <option>sourabh</option>
+                <option>Generating Leads</option>
+                <option>Increasing Website Traffic</option>
+                <option>Brand Awareness</option>
               </Form.Control>
             </Form.Group>
             <Form.Group className="mb-2">
-              <Form.Label>Question 3*</Form.Label>
+              <Form.Label>
+                What is the best way to contact you ?{" "}
+                <span style={{ color: "red" }}>*</span>
+              </Form.Label>
               <Form.Control
-                name="question_3"
+                required
+                name="ans3"
                 as="select"
                 value={qthree}
                 onChange={(e) => setQthree(e.target.value)}
@@ -270,19 +290,31 @@ export default function CompanySection() {
                   borderRadius: "6px",
                 }}
               >
-                <option>Select your option</option>
-                <option>answer1</option>
-                <option>answer2</option>
-                <option>answer3</option>
+                <option>Phone</option>
+                <option>E-mail</option>
+                <option>Whatsapp</option>
               </Form.Control>
             </Form.Group>
-
+            <Form.Group>
+              <Form.Label>Do you have any other query</Form.Label>
+              <Form.Control
+                name="ans4"
+                value={qfour}
+                onChange={(e) => setQfour(e.target.value)}
+                style={{
+                  boxShadow:
+                    "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
+                  padding: "0.5rem",
+                  borderRadius: "6px",
+                }}
+              />
+            </Form.Group>
             <Row>
               <Col md={6}>
                 <Button
-                  className="mt-3"
-                  variant="success"
                   type="submit"
+                  className="mt-3 bg-black text-white mySubmitBtn"
+                  variant="black"
                   style={{
                     boxShadow:
                       "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
