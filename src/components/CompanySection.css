@@ -52,5 +52,17 @@
 }
 
 .closebtn:hover {
-  color: black;
+  color: red;
+}
+
+.companies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 images per row */
+  gap: 10px; /* Space between images */
+  margin: 20px 0; /* Optional: margin around the grid */
+}
+
+.companies img {
+  width: 50%; /* Make images responsive within the grid */
+  height: auto; /* Maintain aspect ratio */
 }

@@ -5,7 +5,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 export default function Testimonial() {
   return (
     <Container className="section-padding">
-      <h2 className="text-center mb-5" style={{ fontFamily: "Oxanium" }}>
+      <h2 className="text-center mb-5" style={{ fontFamily: "Rethink Sans" }}>
         What clients have to say
       </h2>
       <Row>
@@ -18,7 +18,7 @@ export default function Testimonial() {
                 alt="kukreja"
                 style={{ width: "5rem", marginBottom: "10px" }}
               />
-              <Card.Text style={{ fontFamily: "Dancing Script" }}>
+              <Card.Text style={{ fontFamily: "Rethink Sans" }}>
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
                 ipsum commodi suscipit eveniet iusto animi voluptates rem!
                 Asperiores, saepe placeat!"
@@ -38,7 +38,7 @@ export default function Testimonial() {
                 alt="kukreja"
                 style={{ width: "5rem", marginBottom: "10px" }}
               />
-              <Card.Text style={{ fontFamily: "Dancing Script" }}>
+              <Card.Text style={{ fontFamily: "Rethink Sans" }}>
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
                 ipsum commodi suscipit eveniet iusto animi voluptates rem!
                 Asperiores, saepe placeat!"
