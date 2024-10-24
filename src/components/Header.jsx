@@ -23,15 +23,26 @@ export default function Header() {
 
         <Navbar.Collapse id="basic-navbar-nav" className="order-3">
           <Nav className="ms-auto">
-            <Nav.Link href="#" className="text-light">
-              Services
+            <Nav.Link
+              href="https://mediaforumdigital.com"
+              className="text-light"
+            >
+              Home
             </Nav.Link>
-            <Nav.Link href="#" className="text-light">
-              Case Studies
+            <Nav.Link
+              href="https://mediaforumdigital.com/about.html"
+              className="text-light"
+            >
+              About
             </Nav.Link>
-            {/* <Nav.Link href="#" className="text-light">
-              Podcast
+            <Nav.Link
+              href="https://mediaforumdigital.com/our-team.html"
+              className="text-light"
+            >
+              Our Team
             </Nav.Link>
+
+            {/* 
             <Nav.Link href="#" className="text-light">
               Resources
             </Nav.Link>

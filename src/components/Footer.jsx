@@ -8,52 +8,31 @@ export default function Footer() {
       <Container>
         <Row>
           <Col md={4}>
-            <h5 style={{ color: "#d8ff36" }}>MediaForum Digital</h5>
+            <h5 style={{ color: "#d8ff36" }}>Information</h5>
             <p className="text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
-              deleniti minima nemo natus enim ipsam?
-            </p>
-            <p className="text-white">
-              MediaForum Digital PL <br />
-              2024 Nagpur
+              Mediaforum Digital- Best Digital Marketing Company in Nagpur
+              specializes in 360 Degree. SEO, Email Marketing, Website Design,
+              SEO, Content Writing, Analytics & reports.
             </p>
           </Col>
+          <Col md={4}>{"    "}</Col>
+
           <Col md={4}>
-            <h5 style={{ color: "#d8ff36" }}>Agency Services</h5>
-            <ul className="list-unstyled">
-              <li className="text-white">
-                <a href="#" style={{ textDecoration: "none", color: "white" }}>
-                  SEO & Content Strategy
-                </a>
-              </li>
-              <li className="text-white">
-                <a href="#" style={{ textDecoration: "none", color: "white" }}>
-                  Content Production
-                </a>
-              </li>
-              <li className="text-white">
-                <a href="#" style={{ textDecoration: "none", color: "white" }}>
-                  Link Building & Digital PR
-                </a>
-              </li>
-              <li className="text-white">
-                <a href="#" style={{ textDecoration: "none", color: "white" }}>
-                  Technical SEO
-                </a>
-              </li>
-            </ul>
-          </Col>
-          <Col md={4}>
-            <h5 style={{ color: "#d8ff36" }}>Company</h5>
-            <ul className="list-unstyled">
-              <li className="text-white">
-                <a href="#" style={{ textDecoration: "none", color: "white" }}>
-                  About
-                </a>
-              </li>
-              {/* <li className="text-white">Blog</li>
-              <li className="text-white">Careers</li> */}
-            </ul>
+            <h5 style={{ color: "#d8ff36" }}>Get in Touch</h5>
+            <p className="text-white">
+              4th Floor, Plot. No. 37, Beside Chaitanya Home Stay, 39, Behind
+              Amey Hospital, Near Gajanan Nagar Garden, Nagpur,
+              Maharashtra,440015
+              <br />
+              Call : +91 9765127101
+              <br />
+              <a
+                href="mailto:business@mediaforumdigital.com"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                business@mediaforumdigital.com
+              </a>
+            </p>
           </Col>
         </Row>
         <div className="text-center py-3 text-white">
