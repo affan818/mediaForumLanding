@@ -47,43 +47,7 @@ export default function Testimonial() {
               </Card.Subtitle>
             </Card.Body>
           </Card>
-          <Card className="mx-2 testimonial-card">
-            <Card.Body className="card-body">
-              <Card.Img
-                variant="top"
-                src="https://mediaforumdigital.com/clients/goverdhan.png"
-                alt="goverdhan"
-                style={{ width: "5rem", marginBottom: "10px" }}
-              />
-              <Card.Text style={{ fontFamily: "Rethink Sans" }}>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                ipsum commodi suscipit eveniet iusto animi voluptates rem!
-                Asperiores, saepe placeat!"
-              </Card.Text>
-              <Card.Subtitle className="mb-2 text-muted">
-                Mukul, Founder of MediaForum
-              </Card.Subtitle>
-            </Card.Body>
-          </Card>
-          <Card className="mx-2 testimonial-card">
-            <Card.Body className="card-body">
-              <Card.Img
-                variant="top"
-                src="https://mediaforumdigital.com/clients/goverdhan.png"
-                alt="goverdhan"
-                style={{ width: "5rem", marginBottom: "10px" }}
-              />
-              <Card.Text style={{ fontFamily: "Rethink Sans" }}>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                ipsum commodi suscipit eveniet iusto animi voluptates rem!
-                Asperiores, saepe placeat!"
-              </Card.Text>
-              <Card.Subtitle className="mb-2 text-muted">
-                Mukul, Founder of MediaForum
-              </Card.Subtitle>
-            </Card.Body>
-          </Card>
-
+          {/* Add more cards as necessary */}
           {/* Duplicate Cards for Continuous Effect */}
           <Card className="mx-2 testimonial-card">
             <Card.Body className="card-body">

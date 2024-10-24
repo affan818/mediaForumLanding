@@ -15,7 +15,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* Move halfway since we have duplicates */
+    transform: translateX(-15%); /* Move halfway since we have duplicates */
   }
 }
 
@@ -25,17 +25,15 @@
   margin-right: 20px; /* Space between cards */
 }
 
-.card:hover {
-  transform: scale(1.1);
-}
-
 @media (max-width: 768px) {
   .card-wrapper {
     flex-wrap: nowrap; /* Don't wrap cards on small screens */
-    animation: none; /* Stop animation on smaller screens */
+    animation: slide-left 20s linear infinite; /* Enable animation on small screens */
+    width: calc(100% * 5); /* Adjust width for more cards in the wrapper */
   }
 
   .card {
     width: 100%; /* Full width for mobile */
+    margin-right: 0; /* No margin on mobile */
   }
 }
