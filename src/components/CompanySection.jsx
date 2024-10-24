@@ -21,18 +21,20 @@ export default function CompanySection() {
         className="justify-content-center text-center my-5"
         style={{ fontFamily: "Rethink Sans" }}
       >
-        <h1>Work with us</h1>
-        <p>
-          We've helped scale-ups, enterprises, and early-stage startups with
-          organic growth strategy, SEO, and content marketing.
-          <br />
-          Let’s find out if we can support your growth goals.
-        </p>
+        <Col xs={12} md={10} lg={8}>
+          <h1 className="display-4">Work with us</h1>
+          <p className="lead">
+            From rising startups to empowering enterprises, we've driven organic
+            growth with our tailored SEO and content marketing strategies. As a
+            leading digital marketing agency in Nagpur, explore how we can
+            accelerate your growth journey.
+          </p>
+        </Col>
       </Row>
 
       <Row style={{ fontFamily: "Rethink Sans" }}>
         <Col md={6}>
-          <h1 className="mt-4">Companies we've helped grow:</h1>
+          <h1 className="mt-4 p-2">Brands We've Powered Forward!</h1>
           <div className="companies">
             <img width="100" src={Gandhi} alt="Gandhi" />
             <img width="100" src={Nanik} alt="Nanik" />
@@ -47,17 +49,16 @@ export default function CompanySection() {
             <img width="100" src={Everon} alt="Everon" />
             <img width="100" src={Browns} alt="Browns" />
           </div>
-
-          <blockquote className="mt-4" style={{ fontFamily: "Rethink Sans" }}>
-            <p style={{ fontSize: "25px" }}>
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              voluptatibus ea quidem soluta. Ullam itaque similique explicabo
-              consequatur nemo assumenda sint, voluptatibus incidunt perferendis
-              impedi Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Iste excepturi eligendi ut veniam sunt necessitatibus repellendus
-              nemo, sapiente ea qui?"
-            </p>
-          </blockquote>
+          <p
+            className="p-2 text-start"
+            style={{ fontSize: "25px", fontFamily: "Rethink Sans" }}
+          >
+            "Join us to experience where creativity encounters goals! At Media
+            Forum Digital, a leading digital marketing agency in Nagpur, every
+            idea counts, and together, we compose amazing stories that leave a
+            lasting impact. If you're intense about innovation and ready to
+            grow, we’d love to make your next big move with us."
+          </p>
         </Col>
 
         <Col md={6}>

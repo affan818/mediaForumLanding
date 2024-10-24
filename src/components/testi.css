@@ -1,0 +1,41 @@
+.card-container {
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+}
+
+.card-wrapper {
+  display: flex;
+  width: calc(100% * 2); /* Make it wide enough for all cards */
+  animation: slide-left 20s linear infinite; /* Infinite sliding */
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move halfway since we have duplicates */
+  }
+}
+
+.card {
+  transition: transform 0.3s ease;
+  width: 420px; /* Adjust as necessary */
+  margin-right: 20px; /* Space between cards */
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .card-wrapper {
+    flex-wrap: nowrap; /* Don't wrap cards on small screens */
+    animation: none; /* Stop animation on smaller screens */
+  }
+
+  .card {
+    width: 100%; /* Full width for mobile */
+  }
+}
