@@ -1,3 +1,9 @@
+.card {
+  transition: transform 0.3s ease;
+  width: 500px; /* Increased width to make cards larger horizontally */
+  margin-right: 20px; /* Space between cards */
+}
+
 .card-container {
   overflow: hidden;
   position: relative;
@@ -6,8 +12,8 @@
 
 .card-wrapper {
   display: flex;
-  width: calc(100% * 2); /* Make it wide enough for all cards */
-  animation: slide-left 20s linear infinite; /* Infinite sliding */
+  width: calc(100% * 3); /* Adjust based on card width and number of cards */
+  animation: slide-left 20s linear infinite;
 }
 
 @keyframes slide-left {
@@ -15,20 +21,18 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-15%); /* Move halfway since we have duplicates */
+    transform: translateX(-60%); /* Move halfway since we have duplicates */
   }
 }
 
 .card {
-  transition: transform 0.3s ease;
+  transition: transform 0.1s ease;
   width: 420px; /* Adjust as necessary */
   margin-right: 20px; /* Space between cards */
 }
 
 @media (max-width: 768px) {
   .card-wrapper {
-    flex-wrap: nowrap; /* Don't wrap cards on small screens */
-    animation: slide-left 20s linear infinite; /* Enable animation on small screens */
     width: calc(100% * 5); /* Adjust width for more cards in the wrapper */
   }
 

@@ -21,10 +21,10 @@ function MediaForm() {
 
     emailjs
       .sendForm(
-        "service_tcerrvu",
-        "template_dj949ki",
+        "service_ukmv4hy",
+        "template_07oeltm",
         formRef.current,
-        "xDZHnmy9IfY-BemmD"
+        "lUdRgjNfRDWizD2iw"
       )
       .then(
         (result) => {

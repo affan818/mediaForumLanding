@@ -1,5 +1,15 @@
 import React from "react";
 import { Container, Card } from "react-bootstrap";
+import atlantis from "../assets/images/Atlantis.png";
+import concrete from "../assets/images/Concrete.png";
+import kukreja from "../assets/images/Kukreja.png";
+import navnirman from "../assets/images/Navnirman.png";
+import maitry from "../assets/images/Maitry.png";
+import ijm from "../assets/images/IJM.png";
+import everon from "../assets/images/Everon.png";
+import mahalaxmi from "../assets/images/Mahalaxmi.png";
+import gandhi from "../assets/images/Gandhi.png";
+
 import "./testi.css";
 
 export default function Testimonial() {
@@ -15,17 +25,18 @@ export default function Testimonial() {
             <Card.Body className="card-body">
               <Card.Img
                 variant="top"
-                src="https://mediaforumdigital.com/clients/kukreja%20(2).png"
-                alt="kukreja"
-                style={{ width: "5rem", marginBottom: "10px" }}
+                src={atlantis}
+                alt="atlantis"
+                style={{ width: "10rem", marginBottom: "10px" }}
               />
               <Card.Text style={{ fontFamily: "Rethink Sans" }}>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                ipsum commodi suscipit eveniet iusto animi voluptates rem!
-                Asperiores, saepe placeat!"
+                "There was great satisfaction, saying they went more than we
+                expected for the concept's implementation. Our traffic doubled,
+                and conversion skyrocketed, which for any organization is the
+                music to the ears of the management. Brilliant!"
               </Card.Text>
               <Card.Subtitle className="mb-2 text-muted">
-                Sourabh, Senior Director of SEO
+                Atlantis By Mittal Group
               </Card.Subtitle>
             </Card.Body>
           </Card>
@@ -33,17 +44,17 @@ export default function Testimonial() {
             <Card.Body className="card-body">
               <Card.Img
                 variant="top"
-                src="https://mediaforumdigital.com/clients/goverdhan.png"
-                alt="goverdhan"
-                style={{ width: "5rem", marginBottom: "10px" }}
+                src={concrete}
+                alt="concrete"
+                style={{ width: "10rem", marginBottom: "10px" }}
               />
               <Card.Text style={{ fontFamily: "Rethink Sans" }}>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                ipsum commodi suscipit eveniet iusto animi voluptates rem!
-                Asperiores, saepe placeat!"
+                "SEO techniques increased our web presence by leaps and bounds.
+                We went from incognito to the first page in the blink of an eye.
+                We greatly appreciate the whole crew here!"
               </Card.Text>
               <Card.Subtitle className="mb-2 text-muted">
-                Mukul, Founder of MediaForum
+                Concrete Developers
               </Card.Subtitle>
             </Card.Body>
           </Card>
@@ -53,17 +64,17 @@ export default function Testimonial() {
             <Card.Body className="card-body">
               <Card.Img
                 variant="top"
-                src="https://mediaforumdigital.com/clients/kukreja%20(2).png"
+                src={kukreja}
                 alt="kukreja"
-                style={{ width: "5rem", marginBottom: "10px" }}
+                style={{ width: "10rem", marginBottom: "10px" }}
               />
               <Card.Text style={{ fontFamily: "Rethink Sans" }}>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                ipsum commodi suscipit eveniet iusto animi voluptates rem!
-                Asperiores, saepe placeat!"
+                "Right from their cooperation, leads increased tens of times.
+                It’s high time to turn to their campaigns as a target – their
+                ads are different, and their results speak volumes. "
               </Card.Text>
               <Card.Subtitle className="mb-2 text-muted">
-                Sourabh, Senior Director of SEO
+                Anandam World City
               </Card.Subtitle>
             </Card.Body>
           </Card>
@@ -71,17 +82,105 @@ export default function Testimonial() {
             <Card.Body className="card-body">
               <Card.Img
                 variant="top"
-                src="https://mediaforumdigital.com/clients/goverdhan.png"
-                alt="goverdhan"
-                style={{ width: "5rem", marginBottom: "10px" }}
+                src={navnirman}
+                alt="navnirman"
+                style={{ width: "10rem", marginBottom: "10px" }}
               />
               <Card.Text style={{ fontFamily: "Rethink Sans" }}>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                ipsum commodi suscipit eveniet iusto animi voluptates rem!
-                Asperiores, saepe placeat!"
+                "They are creative and their performance analysis brings a whole
+                new level of innovation into our process! The Overall brand
+                engagement has never been this high. Highly recommend!"
+              </Card.Text>
+              <Card.Subtitle className="mb-2 text-muted ">
+                Navnirman Builders
+              </Card.Subtitle>
+            </Card.Body>
+          </Card>
+          <Card className="mx-2 testimonial-card">
+            <Card.Body className="card-body">
+              <Card.Img
+                variant="top"
+                src={everon}
+                alt="everon"
+                style={{ width: "10rem", marginBottom: "10px" }}
+              />
+              <Card.Text style={{ fontFamily: "Rethink Sans" }}>
+                "MediaForum's team makes digital marketing feel effortless!
+                Their valuable strategy and insights have proven that our
+                company stands out in a fiercely competitive world. "
               </Card.Text>
               <Card.Subtitle className="mb-2 text-muted">
-                Mukul, Founder of MediaForum
+                Everon Energy
+              </Card.Subtitle>
+            </Card.Body>
+          </Card>
+          <Card className="mx-2 testimonial-card">
+            <Card.Body className="card-body">
+              <Card.Img
+                variant="top"
+                src={maitry}
+                alt="maitry"
+                style={{ width: "10rem", marginBottom: "10px" }}
+              />
+              <Card.Text style={{ fontFamily: "Rethink Sans" }}>
+                "We must say Media Forum delivered amazing results! Their SEO
+                and PPC campaigns have been thriving immensely."
+              </Card.Text>
+              <Card.Subtitle className="mb-2 text-muted">
+                Green Gold Prime By Maitreya Group
+              </Card.Subtitle>
+            </Card.Body>
+          </Card>
+          <Card className="mx-2 testimonial-card">
+            <Card.Body className="card-body">
+              <Card.Img
+                variant="top"
+                src={ijm}
+                alt="ijm"
+                style={{ width: "10rem", marginBottom: "10px" }}
+              />
+              <Card.Text style={{ fontFamily: "Rethink Sans" }}>
+                "From the start, Mediaforum felt like an extension of our team.
+                They’ve transformed our digital reach with precision and
+                creativity."
+              </Card.Text>
+              <Card.Subtitle className="mb-2 text-muted">
+                IJM's First City
+              </Card.Subtitle>
+            </Card.Body>
+          </Card>
+          <Card className="mx-2 testimonial-card">
+            <Card.Body className="card-body">
+              <Card.Img
+                variant="top"
+                src={mahalaxmi}
+                alt="mahalaxmi"
+                style={{ width: "10rem", marginBottom: "10px" }}
+              />
+              <Card.Text style={{ fontFamily: "Rethink Sans" }}>
+                "Attractive results! Their expertise converted our digital reach
+                with super creativity and sheer consistency! "
+              </Card.Text>
+              <Card.Subtitle className="mb-2 text-muted">
+                Mahalaxmi City
+              </Card.Subtitle>
+            </Card.Body>
+          </Card>
+          <Card className="mx-2 testimonial-card">
+            <Card.Body className="card-body">
+              <Card.Img
+                variant="top"
+                src={gandhi}
+                alt="gandhi"
+                style={{ width: "10rem", marginBottom: "10px" }}
+              />
+              <Card.Text style={{ fontFamily: "Rethink Sans" }}>
+                "Mediaforum’s unique and engaging content strategy brought our
+                brand to life! We are impressed with the consistent followups
+                and creative team."
+              </Card.Text>
+              <Card.Subtitle className="mb-2 text-muted">
+                Mahalaxmi City
               </Card.Subtitle>
             </Card.Body>
           </Card>
